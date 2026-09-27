@@ -1,26 +1,49 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Brand color tokens */
+  --color-ocean: #1E2E3D;
+  /* Primary deep slate / navy for headings & authority */
+  --color-ocean-dark: #121E2A;
+  /* Extra deep ocean for dark backgrounds */
+  --color-warm-sand: #F7F5F0;
+  /* Soft linen / sand background */
+  --color-warm-cream: #EDE8DE;
+  /* Slightly deeper warm cream for cards */
+  --color-sage: #4F7565;
+  /* Muted calming eucalyptus for buttons & accents */
+  --color-sage-hover: #3E5E50;
+  /* Button hover state */
+  --color-clay: #D99268;
+  /* Subtle warm terracotta highlight */
+
+  /* Typography shortcuts */
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-mulish), system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
   }
 }
 
+.animate-breathe {
+  display: inline-block;
+  animation: breathe 8s ease-in-out infinite;
+}
+
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-warm-sand);
+  color: #2D3748;
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
