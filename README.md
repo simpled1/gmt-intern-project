@@ -26,6 +26,69 @@ The site is designed to balance:
 - Ease of navigation
 - A premium, modern brand presence
 
+## Performance comparison
+
+Performance was evaluated using the same testing environment for both sites. The comparison below presents the Lighthouse scores for the reference site, Conejo Valley Counseling, and the current Dr. Maya Reynolds first draft.
+
+### Lighthouse score comparison
+
+| Category | Reference site — Conejo Valley Counseling | Dr. Maya Reynolds first draft | Difference |
+|---|---:|---:|---:|
+| **Performance** | 39 | **93** | **+54 points** |
+| **Accessibility** | 85 | **100** | **+15 points** |
+| **Best practices** | 100 | **100** | No change |
+| **SEO** | 92 | **100** | **+8 points** |
+
+### Performance result
+
+The Dr. Maya Reynolds first draft scored **93 compared with 39** for the reference site. This is:
+
+- **54 Lighthouse points higher**
+- **138.5% higher relative to the reference score**
+- Approximately **2.38× the reference site's Lighthouse performance score**
+
+> Note: Lighthouse scores are benchmark scores, not direct measurements of page-load time. Therefore, it is more accurate to say that the first draft achieved a **138.5% higher performance score** or a **2.38× higher Lighthouse score**, rather than claiming that the site is 2.38× faster in seconds.
+
+### Side-by-side visual comparison
+
+| Reference site | Current draft |
+|---|---|
+| [![Conejo performance capture](./conejo.png)](./conejo.png) | [![GMT performance capture](./gmt.png)](./gmt.png) |
+| **Conejo** — [conejovalleycounseling.com](https://conejovalleycounseling.com) | **Dr. Maya Reynolds** — [gmt-intern-project.vercel.app](https://gmt-intern-project.vercel.app/) |
+
+### Score sources
+
+- Reference site: [conejovalleycounseling.com](https://conejovalleycounseling.com)
+- Current first draft: [gmt-intern-project.vercel.app](https://gmt-intern-project.vercel.app/)
+- Both sites were tested in the same environment.
+- Screenshots of the results are included in [`conejo.png`](./conejo.png) and [`gmt.png`](./gmt.png).
+
+### What the results demonstrate
+
+The comparison shows that the first draft is already performing strongly as an early concept. In addition to the higher Performance score, it achieved perfect scores for Accessibility, Best Practices, and SEO in the recorded test.
+
+At this stage, the goal is not to suggest that the first draft is final. Instead, these results provide a strong starting point for continued refinement while preserving the visual quality and calm experience required for the practice.
+
+### Performance-focused technical choices
+
+- **Next.js App Router** — Supports modern rendering patterns and SEO-friendly page structure
+- **Component-based architecture** — Reusable sections reduce duplication and improve maintainability
+- **Tailwind CSS** — Utility-first styling keeps the design system consistent
+- **Sharp integration** — Supports image optimization in production builds
+- **Metadata and sitemap** — Supports search engine crawling and social sharing
+- **Semantic structure** — Helps support accessibility and maintainable content organization
+
+### Next steps for performance optimization
+
+In future iterations, we can:
+
+- Fine-tune image formats and sizes for different devices and network conditions
+- Continue measuring and optimizing Core Web Vitals, including LCP, INP, and CLS
+- Test font-loading performance under slower network conditions
+- Review and compress production asset sizes
+- Implement caching strategies for repeat visitors
+- Repeat Lighthouse testing after final content and imagery are approved
+
 ## Tech stack
 
 - [Next.js](https://nextjs.org/) 16.3.6
@@ -67,55 +130,6 @@ The site is designed to balance:
 ├── tsconfig.json
 └── README.md
 ```
-
-## Performance comparison
-
-This repository includes a visual performance comparison between the reference site (Conejo) and the current Dr. Maya Reynolds first-draft site (GMT). These captures help evaluate the current direction and show where the site is already performing well and where there is room for optimization in future iterations.
-
-### Side-by-side visual comparison
-
-| Reference site | Current draft |
-|---|---|
-| [![Conejo performance capture](./conejo.png)](./conejo.png) | [![GMT performance capture](./gmt.png)](./gmt.png) |
-| **Conejo** (`conejo.png`) | **Dr. Maya Reynolds** (`gmt.png`) |
-
-### How to interpret this comparison
-
-These performance captures represent a snapshot of how each site loads and performs under specific testing conditions. The comparison is most meaningful when evaluated under the same:
-
-- Device profile (desktop or mobile)
-- Network throttling settings
-- Geographic location
-- Browser and device
-- Specific route/page tested
-
-At the first-draft stage, the goal is not to achieve perfection on every metric — it is to establish a foundation that is already fast, accessible, and user-focused, with clear opportunities for optimization as the project moves forward.
-
-### What this draft prioritizes
-
-- **Visual clarity and brand presence** — The site communicates the practice's warm, professional identity from the first interaction
-- **Responsive design** — Content and layout adapt smoothly across all screen sizes
-- **Semantic HTML and structure** — Pages are built with accessibility and SEO in mind
-- **Image optimization ready** — Sharp is integrated for future image tuning and compression
-- **Font loading strategy** — Google Fonts are configured with `display: swap` to prevent layout shifts
-
-### Performance-focused technical choices
-
-- **Next.js App Router** — Enables server rendering by default, improving initial page load and SEO
-- **Component-based architecture** — Reusable sections reduce code duplication and improve maintainability
-- **Tailwind CSS** — Utility-first styling keeps the CSS bundle lean and scoped
-- **Sharp integration** — Ready to optimize and resize images in production builds
-- **Metadata and sitemap** — Built-in support for search engine crawling and social sharing
-
-### Next steps for performance optimization
-
-In future iterations, we can:
-- Fine-tune image formats and sizes based on device and network conditions
-- Measure and optimize Core Web Vitals (LCP, FID/INP, CLS)
-- Test and optimize font-loading performance
-- Review and compress asset sizes in production builds
-- Implement caching strategies for repeat visitors
-- Run a full Lighthouse audit and address any flagged opportunities
 
 ## Getting started
 
