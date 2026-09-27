@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dr. Maya Reynolds | Integrative Psychotherapy & Somatic Care
+
+A modern, responsive Next.js website for a psychotherapy practice focused on anxiety, trauma, burnout, and nervous-system regulation. The app combines a polished marketing homepage with informative pages for specialties, approach, FAQs, office details, and contact information.
+
+## Overview
+
+This project is built as a marketing and educational website for a licensed clinical psychologist in Santa Monica, California. It presents the practice's values, clinical specialties, therapeutic approach, office details, and calls-to-action in a warm, calming, highly branded experience.
+
+## Features
+
+- Responsive homepage with hero, value propositions, and trust-building sections
+- Clinical specialty pages and content-driven sections for common concerns
+- Integrative treatment approach emphasizing somatic awareness and evidence-based care
+- FAQ and informational content for prospective clients
+- Contact, privacy, disclaimer, and office information pages
+- SEO support with metadata, sitemap, and robots configuration
+- Consistent visual language using custom fonts, warm neutral colors, and refined layout design
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
+- Next.js Image optimization
+- ESLint
+
+## Project Structure
+
+```text
+.
+├── public/
+│   └── images/
+├── src/
+│   ├── app/
+│   │   ├── about/
+│   │   ├── contact/
+│   │   ├── disclaimer/
+│   │   ├── faqs/
+│   │   ├── good-faith-estimate/
+│   │   ├── methods/
+│   │   ├── office/
+│   │   ├── privacy-policy/
+│   │   ├── specialties/
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── robots.ts
+│   │   └── sitemap.ts
+│   ├── components/
+│   │   ├── AppointmentCTA.tsx
+│   │   ├── CoreSpecialities.tsx
+│   │   ├── EmpathyBanner.tsx
+│   │   ├── FAQs.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Hero.tsx
+│   │   ├── HonoringSection.tsx
+│   │   ├── IntegrativeApproach.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── PhilosophyBanner.tsx
+│   │   ├── TheOffice.tsx
+│   │   └── WhoWeHelp.tsx
+│   └── data/
+│       ├── methods.ts
+│       └── specialties.ts
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+├── eslint.config.mjs
+├── postcss.config.mjs
+└── README.md
+```
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+Start the production server:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Linting
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run lint
+```
 
-## Deploy on Vercel
+## Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- The app uses custom metadata for the practice brand and page titles.
+- Images are optimized through the Next.js `Image` component.
+- The design system uses a soft wellness palette with serif headlines and clean sans-serif body text.
+- Content is organized in reusable data files to make specialty and methods content easier to manage and extend.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is private and intended for internal or client-specific use unless otherwise specified.
