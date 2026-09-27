@@ -1,10 +1,10 @@
-# Dr. Maya Reynolds | Integrative Psychotherapy & Somatic Care
+# Dr. Maya Reynolds Website first draft
 
-A modern, responsive Next.js website for a psychotherapy practice focused on anxiety, trauma, burnout, and nervous-system regulation. The app combines a polished marketing homepage with informative pages for specialties, approach, FAQs, office details, and contact information.
+A modern, responsive Next.js website for a psychotherapy practice focused on anxiety, trauma, burnout, and nervous-system regulation. The app combines a polished marketing homepage with informative pages for specialties, approach, FAQs, office details, and contact information as well as keywords optimized for SEO.
 
 ## Overview
 
-This project is built as a marketing and educational website for a licensed clinical psychologist in Santa Monica, California. It presents the practice's values, clinical specialties, therapeutic approach, office details, and calls-to-action in a warm, calming, highly branded experience.
+This is the first website draft for Dr. Maya Reynolds, a licensed clinical psychologist in Santa Monica, California. It presents the practice's values, clinical specialties, therapeutic approach, office details, and calls-to-action in a warm, calming, highly branded experience.
 
 ## Features
 
@@ -22,8 +22,6 @@ This project is built as a marketing and educational website for a licensed clin
 - React 19
 - TypeScript
 - Tailwind CSS
-- Next.js Image optimization
-- ESLint
 
 ## Project Structure
 
@@ -85,33 +83,4 @@ Run the development server:
 npm run dev
 ```
 
-Open http://localhost:3000 in your browser.
-
-## Production Build
-
-```bash
-npm run build
-```
-
-Start the production server:
-
-```bash
-npm run start
-```
-
-## Linting
-
-```bash
-npm run lint
-```
-
-## Notes
-
-- The app uses custom metadata for the practice brand and page titles.
-- Images are optimized through the Next.js `Image` component.
-- The design system uses a soft wellness palette with serif headlines and clean sans-serif body text.
-- Content is organized in reusable data files to make specialty and methods content easier to manage and extend.
-
-## License
-
-This project is private and intended for internal or client-specific use unless otherwise specified.
+Open http://localhost:3000 in your browser.  
