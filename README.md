@@ -1,42 +1,48 @@
-# Dr. Maya Reynolds — Therapy Practice Website
+# Dr. Maya Reynolds Website — First Draft
 
-A modern, responsive website for Dr. Maya Reynolds, a licensed clinical psychologist serving clients in Santa Monica, California and throughout California via telehealth.
+This is the first draft of a modern, responsive website for Dr. Maya Reynolds, a licensed clinical psychologist based in Santa Monica, California. The goal of this version is to establish the brand direction, present the practice in a warm and trustworthy way, and create a calm digital experience that matches the tone of therapy and healing.
 
-The site is designed to make learning about therapy feel calm, clear, and approachable. It combines a polished marketing experience with practical information about specialties, treatment methods, the office, FAQs, contact details, privacy, and client-rights resources.
+This draft is intentionally designed to feel polished and high-quality while still leaving space for refinement. It reflects the early stages of the project: the structure, voice, content flow, and visual language are in place, and the site is positioned as a strong foundation for the next iteration with client feedback, final copy, and more advanced optimization.
 
-## Project status
+## What this first draft includes
 
-This repository contains the first production-oriented draft of the Dr. Maya Reynolds website. The visual system, page structure, content model, and responsive layouts are in place and can be extended as the practice content is finalized.
+- A refined homepage with a welcoming hero section and clear calls to action
+- Practice-focused messaging around anxiety, trauma, burnout, and nervous-system regulation
+- Informational sections that explain the therapeutic approach and the client experience
+- Dedicated pages for services, office details, FAQs, contact, privacy, and practice disclosures
+- Warm, editorial visuals with a soft neutral palette and elevated typography
+- Responsive layouts across desktop and mobile screens
+- Search-engine metadata and sitemap structure for future launch readiness
 
-## Highlights
+## The overall direction
 
-- Responsive homepage with a welcoming hero section and clear calls to action
-- Content-focused pages for anxiety, trauma, burnout, and other common concerns
-- Integrative treatment information grounded in somatic awareness and evidence-based care
-- Dedicated pages for the practice, methods, office, FAQs, contact, and appointment information
-- Privacy policy, disclaimer, and Good Faith Estimate resources
-- Search-engine support through page metadata, a sitemap, and robots configuration
-- Warm neutral color palette, custom typography, and a calm editorial visual language
-- Optimized image handling through Next.js and the `sharp` package
-- Reusable React components for navigation, content sections, calls to action, and the footer
+This first draft aims to create a sense of calm, trust, and emotional safety from the very first scroll. The look and feel are grounded in warmth, clarity, and professionalism, with the intent of helping prospective clients feel at ease before even scheduling a consultation.
 
-## Technology
+The site is designed to balance:
+
+- Clinical credibility
+- Emotional warmth
+- Clear information architecture
+- Ease of navigation
+- A premium, modern brand presence
+
+## Tech stack
 
 - [Next.js](https://nextjs.org/) 16.3.6
 - [React](https://react.dev/) 19.2.8
 - TypeScript
 - Tailwind CSS 4
 - ESLint
-- Sharp for image optimization
+- Sharp for image handling and optimization
 
-## Site structure
+## Project structure
 
 ```text
 .
 ├── public/
-│   └── images/                 # Photography and illustrations used by the site
+│   └── images/                 # Brand photography and visual assets
 ├── src/
-│   ├── app/                    # App Router pages and SEO configuration
+│   ├── app/                    # App Router pages and metadata files
 │   │   ├── about/
 │   │   ├── contact/
 │   │   ├── disclaimer/
@@ -51,10 +57,10 @@ This repository contains the first production-oriented draft of the Dr. Maya Rey
 │   │   ├── page.tsx
 │   │   ├── robots.ts
 │   │   └── sitemap.ts
-│   ├── components/             # Reusable page sections
-│   └── data/                   # Structured methods and specialties content
-├── conejo.png                  # Reference-site performance capture
-├── gmt.png                     # Dr. Maya Reynolds site performance capture
+│   ├── components/             # Reusable site sections
+│   └── data/                   # Structured practice content
+├── conejo.png                  # Reference site performance comparison image
+├── gmt.png                     # Current draft performance comparison image
 ├── next.config.ts
 ├── package.json
 ├── postcss.config.mjs
@@ -64,47 +70,30 @@ This repository contains the first production-oriented draft of the Dr. Maya Rey
 
 ## Performance comparison
 
-The repository includes two performance captures for a visual comparison between the reference **Conejo** site and the **GMT / Dr. Maya Reynolds** site:
+This repository also includes a visual comparison between the reference site and the current first-draft design. These captures are intended to help evaluate performance direction and identify where the draft can improve.
 
-| Reference site | Dr. Maya Reynolds site |
+| Reference site | Current draft |
 |---|---|
 | [![Conejo performance capture](./conejo.png)](./conejo.png) | [![GMT performance capture](./gmt.png)](./gmt.png) |
 | `conejo.png` | `gmt.png` |
 
-These images are included as the source of truth for the comparison. They should be evaluated using the same device profile, network throttling, URL, and Lighthouse/PageSpeed test settings before treating the values as a direct benchmark. The comparison is intended to showcase the difference in the captured performance results; it does not claim that one capture is universally representative of every route or production deployment.
+This comparison is meant to be evaluated under the same testing conditions, including device type, network settings, and route assumptions, so the differences in performance are interpreted fairly. At this stage, this is a first draft, and the goal is not perfection—it is to understand where the experience is already strong and where it can still be improved.
 
-For a repeatable comparison, build and serve the site in production mode:
+### What this draft is focusing on
 
-```bash
-npm install
-npm run build
-npm run start
-```
+- Establishing a compelling visual identity
+- Creating a clear and reassuring client journey
+- Presenting therapy services in a calm and thoughtful way
+- Creating the foundation for future optimization and content refinement
 
-Then run Lighthouse or PageSpeed Insights against the same route and test conditions used for the Conejo capture. Record the following metrics when updating this section:
+### Performance-oriented notes
 
-- Performance score
-- Largest Contentful Paint (LCP)
-- Total Blocking Time (TBT) or Interaction to Next Paint (INP)
-- Cumulative Layout Shift (CLS)
-- First Contentful Paint (FCP)
-- Speed Index
-- Total page weight and image payload
-
-### Performance-focused implementation choices
-
-- Next.js App Router enables server-rendered page content by default.
-- `next/font/google` loads the Cormorant Infant and Mulish typefaces with `display: swap`.
-- Sharp is installed to support optimized image processing in production builds.
-- Page sections are composed from reusable components rather than duplicated markup.
-- Metadata, sitemap, and robots configuration are included to improve discoverability and sharing.
+- Next.js App Router is used to support modern rendering patterns and improved page structure
+- Google Fonts are loaded with `display: swap` to support smoother rendering
+- Image handling is set up with Sharp for future optimization opportunities
+- The current build is a strong early foundation, with room for further tuning in production performance
 
 ## Getting started
-
-### Prerequisites
-
-- Node.js 20 or newer is recommended
-- npm
 
 ### Install dependencies
 
@@ -118,31 +107,28 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Then open:
 
-### Available commands
+```text
+http://localhost:3000
+```
 
-| Command | Description |
-|---|---|
-| `npm run dev` | Start the development server using Webpack |
-| `npm run dev:turbo` | Start the development server using Turbopack |
-| `npm run build` | Create a production build |
-| `npm run start` | Serve the production build |
-| `npm run lint` | Run ESLint |
+## Available commands
 
-## Content and customization
+```bash
+npm run dev
+npm run dev:turbo
+npm run build
+npm run start
+npm run lint
+```
 
-- Update page content in the route files under `src/app/`.
-- Update specialties and treatment methods in `src/data/`.
-- Reuse or extend the components in `src/components/` for new sections.
-- Update global styles and design tokens in `src/app/globals.css`.
-- Add or replace static assets in `public/images/`.
-- Update the metadata in `src/app/layout.tsx` and the URL configuration in `src/app/sitemap.ts` before deployment.
+## Notes for the client-facing presentation
 
-## Deployment
+This is still the first draft of the website, but it already communicates the intended tone of the practice: calming, intelligent, grounded, and warm. The design direction is aligned with the therapeutic brand, and the structure is ready for refinement as we continue to shape the final messaging, content, and optimization strategy.
 
-The application can be deployed to any platform that supports Next.js. Before launch, verify the production URL, canonical metadata, sitemap, contact details, legal content, image licenses, and accessibility across mobile and desktop breakpoints.
+At this stage, the project is best understood as a strong concept foundation rather than a final production version. The work ahead includes content refinement, performance tuning, visual polish, and final content approval before launch.
 
 ## Disclaimer
 
-This website draft is informational and is not a substitute for emergency mental-health care. Final clinical, legal, insurance, and contact information should be reviewed by the practice before publication.
+This first draft is intended as a concept and presentation version of the website. Final legal, clinical, and marketing copy should be reviewed and approved before public launch.
