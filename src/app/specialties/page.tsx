@@ -61,7 +61,7 @@ export default function SpecialtiesIndexPage() {
                       alt={item.imageAlt}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 50vw"
+                      sizes="(max-width: 767px) calc(100vw - 3rem), (max-width: 1279px) calc(50vw - 4.5rem), 568px"
                     />
                   </div>
                   <span className="text-xs uppercase tracking-widest text-sage font-semibold block font-sans">

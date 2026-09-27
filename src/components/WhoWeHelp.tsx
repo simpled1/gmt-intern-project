@@ -26,7 +26,7 @@ export default function WhoWeHelp() {
   ];
 
   return (
-    <section className="bg-warm-sand py-24 md:py-36 px-6 md:px-12 border-b border-ocean/10">
+    <section className="below-fold bg-warm-sand py-24 md:py-36 px-6 md:px-12 border-b border-ocean/10">
       <div className="max-w-7xl mx-auto">
 
         {/* Section Header with generous breathing room */}
@@ -56,8 +56,7 @@ export default function WhoWeHelp() {
                   alt={item.alt}
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 33vw, 400px"
-                  {...(index === 0 ? { priority: true } : {})}
+                  sizes="(max-width: 767px) calc(100vw - 3rem), (max-width: 1023px) calc(33.333vw - 3.667rem), (max-width: 1279px) calc(33.333vw - 4.333rem), 357px"
                 />
               </div>
 

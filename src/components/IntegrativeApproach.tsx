@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function IntegrativeApproach() {
   return (
-    <section className="w-full">
+    <section className="below-fold w-full">
       {/* PART 1: Areas of Focus Grid */}
       <div className="bg-warm-sand py-20 md:py-24 px-6 md:px-12 border-b border-ocean/10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
@@ -77,12 +77,12 @@ export default function IntegrativeApproach() {
           </div>
 
           {/* 2. THE SINGLE IMAGE (Order 2 on mobile, Right col-span-5 Rows 1-2 on desktop) */}
-          <div className="lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:row-span-2 relative w-full aspect-[4/3] sm:aspect-[16/9] lg:aspect-[4/5] bg-warm-sand overflow-hidden shadow-sm my-4 lg:my-0">
+          <div className="lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:row-span-2 relative w-full md:max-w-[480px] md:mx-auto md:aspect-[4/5] lg:max-w-none lg:mx-0 aspect-[4/3] sm:aspect-[16/9] lg:aspect-[4/5] bg-warm-sand overflow-hidden shadow-sm my-4 lg:my-0">
             <Image
               src="/images/how-we-work.jpg"
               alt="A peaceful, restorative moment by the Santa Monica coast"
               fill
-              sizes="(max-width: 640px) 90vw, (max-width: 1024px) 500px, 42vw"
+              sizes="(max-width: 767px) calc(100vw - 3rem), (max-width: 1023px) 480px, 42vw"
               className="object-cover object-center hover:scale-105 transition-transform duration-700 ease-out"
             />
           </div>

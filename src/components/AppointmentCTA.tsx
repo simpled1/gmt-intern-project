@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function AppointmentCTA() {
   return (
-    <section id="contact" className="bg-warm-cream/60 py-24 md:py-36 px-6 md:px-12 border-b border-ocean/10">
+    <section id="contact" className="below-fold bg-warm-cream/60 py-24 md:py-36 px-6 md:px-12 border-b border-ocean/10">
       <div className="max-w-4xl mx-auto text-center">
         
         {/* Eyebrow Label */}

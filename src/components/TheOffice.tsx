@@ -47,7 +47,7 @@ export default function OurOffice() {
               src="/images/office1.jpeg"
               alt="Sunlit therapy seating area with natural linen textures in Santa Monica"
               fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 58vw, 720px"
+              sizes="(max-width: 767px) calc(100vw - 3rem), (max-width: 1279px) calc(58.333vw - 4.667rem), 667px"
               className="object-cover object-center hover:scale-105 transition-transform duration-700 ease-out"
             />
           </div>
@@ -58,7 +58,7 @@ export default function OurOffice() {
               src="/images/office2.jpeg"
               alt="Comfortable, private counseling corner with warm lighting"
               fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 42vw, 520px"
+              sizes="(max-width: 767px) calc(100vw - 3rem), (max-width: 1279px) calc(41.667vw - 3.333rem), 477px"
               className="object-cover object-center hover:scale-105 transition-transform duration-700 ease-out"
             />
           </div>

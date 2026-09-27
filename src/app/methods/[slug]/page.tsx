@@ -82,13 +82,13 @@ export default async function MethodPage({ params }: PageProps) {
           </div>
 
           {/* 2. THE SINGLE IMAGE (Order 2 on mobile, Right col-span-5 Rows 1-2 on desktop) */}
-          <div className="lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:row-span-2 relative aspect-[16/9] lg:aspect-[4/5] w-full border border-warm-cream shadow-md overflow-hidden bg-warm-cream/30 my-4 lg:my-0">
+          <div className="lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:row-span-2 relative aspect-[16/9] md:aspect-[4/5] md:max-w-[480px] md:mx-auto lg:aspect-[4/5] lg:max-w-none lg:mx-0 w-full border border-warm-cream shadow-md overflow-hidden bg-warm-cream/30 my-4 lg:my-0">
             <Image
               src={method.image}
               alt={method.imageAlt}
               fill
               className="object-cover"
-              sizes="(max-width: 640px) 90vw, (max-width: 1024px) 500px, 42vw"
+              sizes="(max-width: 767px) calc(100vw - 3rem), (max-width: 1023px) 480px, 42vw"
               priority
             />
           </div>

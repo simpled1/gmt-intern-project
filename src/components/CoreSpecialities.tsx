@@ -34,7 +34,7 @@ export default function CoreSpecialties() {
 
 
   return (
-    <section id="specialties" className="bg-warm-sand py-24 md:py-36 px-6 md:px-12 border-b border-ocean/10">
+    <section id="specialties" className="below-fold bg-warm-sand py-24 md:py-36 px-6 md:px-12 border-b border-ocean/10">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
@@ -66,7 +66,7 @@ export default function CoreSpecialties() {
                     href={item.href}
                     className="inline-block text-xs uppercase font-semibold tracking-widest text-ocean/80 hover:text-sage border-b border-ocean/30 hover:border-sage pb-1 transition-all duration-300 font-sans"
                   >
-                    {item.linkText}
+                    <span className="sr-only">Learn more about </span>{item.title}
                   </Link>
                 </div>
               </div>

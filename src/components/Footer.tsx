@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-warm-sand text-ocean py-20 px-6 md:px-12 border-t border-ocean/10">
+    <footer className="below-fold bg-warm-sand text-ocean py-20 px-6 md:px-12 border-t border-ocean/10">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 pb-16 border-b border-ocean/10">
           
@@ -23,9 +23,9 @@ export default function Footer() {
 
           {/* Column 2: Navigation (2 of 12 cols) */}
           <div className="md:col-span-2 space-y-3 font-sans">
-            <h4 className="text-xs uppercase tracking-widest font-semibold text-ocean/90">
+            <h3 className="text-xs uppercase tracking-widest font-semibold text-ocean/90">
               Navigate
-            </h4>
+            </h3>
             <ul className="space-y-2 text-sm text-ocean/70">
               <li><Link href="/" className="hover:text-sage transition-colors">Home</Link></li>
               <li><Link href="/about" className="hover:text-sage transition-colors">About</Link></li>
@@ -40,9 +40,9 @@ export default function Footer() {
 
           {/* Column 3: Hours & Availability (2 of 12 cols) */}
           <div className="md:col-span-2 space-y-3 font-sans">
-            <h4 className="text-xs uppercase tracking-widest font-semibold text-ocean/90">
+            <h3 className="text-xs uppercase tracking-widest font-semibold text-ocean/90">
               Practice
-            </h4>
+            </h3>
             <div className="text-sm text-ocean/70 space-y-1">
               <p>Mon – Thu: 9am – 6pm</p>
               <p>Friday: 9am – 2pm</p>
@@ -52,16 +52,16 @@ export default function Footer() {
 
           {/* Column 4: Contact & Location (3 of 12 cols) */}
           <div className="md:col-span-3 space-y-3 font-sans">
-            <h4 className="text-xs uppercase tracking-widest font-semibold text-ocean/90">
+            <h3 className="text-xs uppercase tracking-widest font-semibold text-ocean/90">
               Santa Monica Office
-            </h4>
+            </h3>
             <div className="text-sm text-ocean/70 space-y-1">
               <p>123th Street 45 W</p>
               <p>Santa Monica, CA 90401</p>
               <p className="pt-2">office@drmayareynolds.com</p>
               <p>(310) 555-0192</p>
             </div>
-            <p className="text-xs text-ocean/60 pt-2">
+            <p className="text-xs text-ocean/80 pt-2">
               Serving Santa Monica, Venice, Brentwood, Pacific Palisades, and California statewide.
             </p>
           </div>
@@ -69,7 +69,7 @@ export default function Footer() {
         </div>
 
         {/* Legal Sub-Footer */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-ocean/60 font-sans gap-4">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-ocean/80 font-sans gap-4">
           <p>© {new Date().getFullYear()} Dr. Maya Reynolds, PsyD. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy-policy" className="hover:text-sage transition-colors">Privacy Policy</Link>

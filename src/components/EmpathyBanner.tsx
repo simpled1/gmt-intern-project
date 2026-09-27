@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function EmpathyBanner() {
   return (
-    <section className="bg-warm-cream/50 py-20 md:py-28 px-6 md:px-12">
+    <section className="below-fold bg-warm-cream/50 py-20 md:py-28 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           {/* 1. Headline (Left, Row 1 on desktop) */}
@@ -13,12 +13,12 @@ export default function EmpathyBanner() {
           </div>
 
           {/* 2. THE SINGLE IMAGE (Order 2 on mobile, Right col-span-5 Rows 1-2 on desktop) */}
-          <div className="lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:row-span-2 relative w-full aspect-[4/3] sm:aspect-[16/9] lg:aspect-[4/5] overflow-hidden shadow-sm my-4 lg:my-0">
+          <div className="lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:row-span-2 relative w-full md:max-w-[480px] md:mx-auto md:aspect-[4/5] lg:max-w-none lg:mx-0 aspect-[4/3] sm:aspect-[16/9] lg:aspect-[4/5] overflow-hidden shadow-sm my-4 lg:my-0">
             <Image
               src="/images/empathy-tide.jpg"
               alt="Gentle Pacific waves washing over the Santa Monica sand"
               fill
-              sizes="(max-width: 640px) 90vw, (max-width: 1024px) 500px, 42vw"
+              sizes="(max-width: 767px) calc(100vw - 3rem), (max-width: 1023px) 480px, 42vw"
               className="object-cover object-center hover:scale-105 transition-transform duration-700 ease-out"
             />
           </div>

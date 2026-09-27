@@ -25,14 +25,16 @@ export default function Hero() {
           </div>
 
           {/* 2. THE SINGLE IMAGE (Order 2 on mobile, Right col-span-5 Rows 1-2 on desktop) */}
-          <div className="lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:row-span-2 relative w-full aspect-[4/5] sm:aspect-[3/4] overflow-hidden shadow-sm bg-warm-cream my-2 lg:my-0">
+          <div className="lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:row-span-2 relative w-full md:max-w-[480px] md:mx-auto md:aspect-[4/5] lg:max-w-none lg:mx-0 aspect-[4/5] sm:aspect-[3/4] overflow-hidden shadow-sm bg-warm-cream my-2 lg:my-0">
             <Image
               src="/images/maya-consulting.jpg"
               alt="Dr. Maya Reynolds consulting with a client in her warm Santa Monica office"
               fill
               priority
+              fetchPriority="high"
+              quality={85}
               className="object-cover object-center hover:scale-105 transition-transform duration-700 ease-out"
-              sizes="(max-width: 640px) 90vw, (max-width: 1024px) 500px, 42vw"
+              sizes="(max-width: 767px) calc(100vw - 3rem), (max-width: 1023px) 480px, 42vw"
             />
           </div>
 

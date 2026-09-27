@@ -13,14 +13,16 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <EmpathyBanner />
-      <WhoWeHelp />
-      <PhilosophyBanner />
-      <IntegrativeApproach />
-      <HonoringSection />
-      <CoreSpecialties />
-      <AppointmentCTA />
+      <main>
+        <Hero />
+        <EmpathyBanner />
+        <WhoWeHelp />
+        <PhilosophyBanner />
+        <IntegrativeApproach />
+        <HonoringSection />
+        <CoreSpecialties />
+        <AppointmentCTA />
+      </main>
       <Footer />
     </>
   );

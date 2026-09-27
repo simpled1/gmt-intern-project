@@ -68,7 +68,7 @@ export default function AboutPage() {
                                     src="/images/maya-reynolds.png"
                                     alt="Dr. Maya Reynolds, PsyD"
                                     fill
-                                    sizes="(max-width: 1024px) 100vw, 42vw"
+                                    sizes="(max-width: 1023px) calc(100vw - 6rem), (max-width: 1279px) calc(41.667vw - 4.167rem), 467px"
                                     className="object-cover object-top hover:scale-105 transition-transform duration-700 ease-out"
                                 />
                             </div>

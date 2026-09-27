@@ -63,7 +63,7 @@ export default function ContactPage() {
                     src="/images/office1.jpeg"
                     alt="Dr. Maya Reynolds Santa Monica office sanctuary"
                     fill
-                    sizes="(max-width: 1024px) 100vw, 40vw"
+                    sizes="(max-width: 1023px) calc(100vw - 6rem), (max-width: 1279px) calc(41.667vw - 4.167rem), 467px"
                     className="object-cover object-center"
                   />
                 </div>

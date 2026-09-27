@@ -2,13 +2,13 @@ import Image from "next/image";
 
 export default function PhilosophyBanner() {
   return (
-    <section className="relative w-full min-h-[460px] md:min-h-[540px] flex items-center overflow-hidden">
+    <section className="below-fold relative w-full min-h-[460px] md:min-h-[540px] flex items-center overflow-hidden">
       {/* Background Image */}
       <Image
         src="/images/philosophy-banner.jpg"
         alt="Santa Monica coastal sanctuary"
         fill
-        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 100vw, 1440px"
+        sizes="100vw"
         className="object-cover object-[center_35%]"
       />
 
